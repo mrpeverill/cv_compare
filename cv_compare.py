@@ -16,8 +16,8 @@ def file_get_contents(path):
             return data
 
 regex=re.compile(r'10.\d{4,9}/[-._;()/:A-Z0-9]+',flags=re.I)
-preprintRegexes = ['10\.1101',
-                   '10\.31234']
+preprintRegexes = ['10\.1101',  #bioRxiv
+                   '10\.31234'] #psyarxiv
 preprintCombinedRegex = "(" + ")|(".join(preprintRegexes) + ")"
 def preprint_search(x):
     if re.match(preprintCombinedRegex,x):
