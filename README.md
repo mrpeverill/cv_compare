@@ -1,6 +1,6 @@
 # cv_compare
 
-Compare lists of publications with DOIs
+Compare lists of publications with DOIs. Also reports duplicate DOIs.
 
 Currently only works with two arguments. Will take a url or file path. Searches DOI's for a manually coded list of preprint servers so those can be reported.
 
