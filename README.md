@@ -14,12 +14,19 @@ Outputs:
 
 ```
 ex_a.txt
-Found 3 DOI codes
-Found 2 preprints
+Found 4 DOI codes
+Found 3 preprints
 ___________________
 ex_b.txt
 Found 4 DOI codes
 Found 2 preprints
+___________________
+Duplicate Detection:
+1 duplicates in A
+3    10.1101/2021.09.22.461242
+Name: DOIs, dtype: object
+0 duplicates in B
+Series([], Name: DOIs, dtype: object)
 ___________________
 Unique Items:
                          DOIs  preprint                      DOIsB preprintB
