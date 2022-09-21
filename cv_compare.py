@@ -37,10 +37,21 @@ for i in range(1,len(sys.argv)):
     dois.append(datadoi)
     print("___________________")
 
+#Make lists
 A=dois[0]
 B=dois[1]
 Aex=A[~A['DOIs'].isin(B['DOIs'])]
 Bex=B[~B['DOIs'].isin(A['DOIs'])].add_suffix("B")
+
+print("Duplicate Detection:")
+Adup=A[A.duplicated()]
+print("%s duplicates in A" % len(Adup.index))
+print(Adup['DOIs'])
+Bdup=B[B.duplicated()]
+print("%s duplicates in B" % len(Bdup.index))
+print(Bdup['DOIs'])
+print("___________________")
+
 
 print("Unique Items:")
 
